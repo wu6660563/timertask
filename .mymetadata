@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="timertask"
+  id="myeclipse.1303606432718"
+  context-root="/timertask"
+  j2ee-spec="5.0"
+  archive="timertask.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
