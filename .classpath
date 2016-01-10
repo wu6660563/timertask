@@ -37,16 +37,18 @@
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/json-lib-2.2.3-jdk15.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/log4j-1.2.13.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jstl.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/standard-1.1.2.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/quartz-1.7.3.jar"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/jstl.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/standard-1.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/quartz-1.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/mail.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.aspects-3.0.5.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.instrument-3.0.5.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.jms-3.0.5.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.web.portlet-3.0.5.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.web.struts-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/jackson-all-1.9.2.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
