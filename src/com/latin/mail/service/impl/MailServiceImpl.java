@@ -40,7 +40,7 @@ public class MailServiceImpl implements MailService {
 				mailUtil.send(mailTaskvo.getMail_to(), mailTaskvo.getMail_message(), mailTaskvo.getMail_subject());
 				mailTaskvo.setIs_ok(1);
 				mailTaskvo.setSend_count(mailTaskvo.getSend_count()+1);
-				mailTaskvo.setDate_modified(DateUtils.getDefaultFormatCurrentDate());
+				mailTaskvo.setDate_modified(DateUtils.getCurrentTime());
 				mailMapper.updateStatus(mailTaskvo);
 				logger.info(mailTaskvo.getTask_id()+"---------发送成功！");
 			}

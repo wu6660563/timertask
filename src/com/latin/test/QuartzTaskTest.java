@@ -20,7 +20,7 @@ import com.latin.quartz.QuartzFactory;
 public class QuartzTaskTest extends BaseJob {
 
 	/** 日志对象 */
-//	private Logger logger = Logger.getLogger(QuartzTaskTest.class);
+	// private Logger logger = Logger.getLogger(QuartzTaskTest.class);
 
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
 		System.out.println("Test");
@@ -30,7 +30,7 @@ public class QuartzTaskTest extends BaseJob {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 		System.out.println("TEST结束。。。");
 	}
 
@@ -46,22 +46,19 @@ public class QuartzTaskTest extends BaseJob {
 			Thread.sleep(15000);
 			// 15秒之后暂停触发器
 			quartzFactory.pauseCrontab("Test");
-			System.out.println(DateUtils.getDefaultFormatCurrentDate()
-					+ "触发器暂停了1111111");
+			System.out.println(DateUtils.getCurrentTime() + "触发器暂停了1111111");
 
 			Thread.sleep(10000);
 
-			System.out.println(DateUtils.getDefaultFormatCurrentDate()
+			System.out.println(DateUtils.getCurrentTime()
 					+ "触发器准备重新开启222222222");
 			quartzFactory.resumeCrontab("Test");
 
 			Thread.sleep(10000);
 
-			System.out.println(DateUtils.getDefaultFormatCurrentDate()
-					+ "触发器准备删除33333333");
+			System.out.println(DateUtils.getCurrentTime() + "触发器准备删除33333333");
 			quartzFactory.deleteCrontab("Test");
-			System.out.println(DateUtils.getDefaultFormatCurrentDate()
-					+ "触发器已删除44444");
+			System.out.println(DateUtils.getCurrentTime() + "触发器已删除44444");
 		} catch (SchedulerException e) {
 			e.printStackTrace();
 		} catch (ParseException e) {

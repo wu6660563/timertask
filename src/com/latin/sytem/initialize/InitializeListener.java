@@ -9,8 +9,9 @@ import org.apache.log4j.BasicConfigurator;
 import com.latin.sytem.resource.SysResourceCenter;
 /**
  * 
- * 初始化启动监听
+ * <p>初始化启动监听<p>
  * @author nick
+ * @Date 2016/01/10
  *
  */
 public class InitializeListener  implements ServletContextListener {
@@ -28,9 +29,11 @@ public class InitializeListener  implements ServletContextListener {
 	}
 	
 	/**
-     * initLog:
+     * 
      * <p>初始化LOG4J日志配置
-     * @since   v1.01
+     * 
+     * @Date 2016/01/10
+     * 
      */
     private void initLog() {
     	String sysPath = SysResourceCenter.getInstance().getSysPath();

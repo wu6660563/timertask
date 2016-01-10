@@ -1,6 +1,5 @@
 package com.latin.api.app.service.impl;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Hashtable;
 
@@ -59,10 +58,8 @@ public class OpinionServiceImpl implements OpinionService {
 		opinion.setOs_type(Integer.parseInt(map.get("osType")));
 		opinion.setNetflow_type(Integer.parseInt(map.get("netflow_type")));
 		opinion.setVersion_number(map.get("version_number"));
-		opinion.setDate_added(DateUtils.format(new Date(),
-				DateUtils.YYYY_MM_DD_HH_MM_SS));
-		opinion.setDate_added(DateUtils.format(new Date(),
-				DateUtils.YYYY_MM_DD_HH_MM_SS));
+		opinion.setDate_added(DateUtils.getCurrentTime());
+		opinion.setDate_added(DateUtils.getCurrentTime());
 
 		logger.info("-------------要插入数据："+opinion.getOpinion_id()+"----"+opinion.getNetflow_type()+"----"+opinion.getOs_type());
 		opinionMapper.add(opinion);

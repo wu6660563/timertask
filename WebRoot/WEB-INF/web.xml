@@ -19,7 +19,7 @@
     <param-name>contextConfigLocation</param-name>
     <!-- 
     <param-value>classpath*:applicationContext-*.xml</param-value> -->
-    <param-value>WEB-INF/spring/applicationContext-common.xml,WEB-INF/spring/applicationContext-*.xml</param-value>
+    <param-value>WEB-INF/spring/applicationContext-common.xml</param-value>
 </context-param>
 <!-- 配置Spring核心控制器 指定对应的controller -->
 <servlet>

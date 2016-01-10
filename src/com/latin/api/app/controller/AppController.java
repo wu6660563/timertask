@@ -49,11 +49,11 @@ public class AppController {
 	@ResponseBody
 	public String Test() {
 		String returnData = "";
-		String[] reviceiver = {"null", "772531127@comprame.com","nick@comprame.com", "953374957@qq.com" };
-		for (int i = 0; i < reviceiver.length; i++) {
-			mailUtil.send(reviceiver[i], "<br>TEST<br><p><b>正在测试中文</b>",
-					"发送邮件测试");
-		}
+//		String[] reviceiver = {"null", "772531127@comprame.com","nick@comprame.com", "953374957@qq.com" };
+//		for (int i = 0; i < reviceiver.length; i++) {
+//			mailUtil.send(reviceiver[i], "<br>TEST<br><p><b>正在测试中文</b>",
+//					"发送邮件测试");
+//		}
 		return returnData;
 	}
 
